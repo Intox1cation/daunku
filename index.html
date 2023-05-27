@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML 2.0</title>
+  <link rel="preload" as="style" href="./assets/css/libs.css" />
+  <link rel="preload" as="style" href="./assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap&_v=20230527131319" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/libs.css?_v=20230527131319" />
+  <link rel="stylesheet" href="./assets/css/style.css?_v=20230527131319" />
+</head>
+
+  <body>
+    <div class="wrapper flex flex-column">
+      <wc-toast position="top-right"></wc-toast>
+      <main class="main flex-grow-1">
+        <section class="section hero overflow-h">
+  <div class="container">
+    <header class="header indent-p-top-6">
+  <div class="logo">
+    <picture>
+      <source srcset="./assets/images/logo.avif" type="image/avif" />
+      <source srcset="./assets/images/logo.webp" type="image/webp" />
+      <img class="img img_vertical" src="./assets/images/logo.png" alt="" />
+    </picture>
+  </div>
+  <nav class="navigation"><div class="navigation__menu menu" data-mobile-body>
+  <ul class="menu__list">
+    <li class="menu__item menu__item_active">
+      <a href="#">Home</a>
+    </li>
+    <li class="menu__item">
+      <a href="#">Shop</a>
+    </li>
+    <li class="menu__item">
+      <a href="#">About Us</a>
+    </li>
+    <li class="menu__item">
+      <a href="#">Contact</a>
+    </li>
+  </ul>
+</div>
+
+<button class="menu-button indent-m-left-2" data-mobile-button>
+  <svg viewBox="0 0 100 100">
+    <path
+      class="menu-button__line menu-button__line_1"
+      d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+    />
+    <path class="menu-button__line menu-button__line_2" d="M 20,50 H 80" />
+    <path
+      class="menu-button__line menu-button__line_3"
+      d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+    />
+  </svg>
+</button>
+</nav>
+  <div class="actions">
+    <div class="actions__item">
+      <span class="icon icon_big">
+        <span class="icon__badge gradient">1</span>
+        <svg>
+          <use xlink:href="./assets/images/icons.svg#cart"></use>
+        </svg>
+      </span>
+    </div>
+  </div>
+</header>
+
+    <h1 class="hero__title text-level-1 text-color-white text-center indent-p-top-7">
+      Bring Serenity to <span class="text-color-gradient">Your Place</span> With
+      Interior Plants
+    </h1>
+    <h6 class="hero__text text-big text-color-white text-center indent-p-top-3">
+      find your dream plant for you home decoration with&nbsp;us, and we will make it
+      happen.
+    </h6>
+    <form action="" class="search indent-p-top-5">
+      <div class="field-box">
+        <div class="field">
+          <input type="text" class="field__input" name="name" placeholder="Search plant" value="" />
+          <button class="button button_primary button_icon">
+            <span class="icon">
+              <svg>
+                <use xlink:href="./assets/images/icons.svg#search"></use>
+              </svg>
+            </span>
+          </button>
+        </div>
+        <div class="field-box__error"></div>
+      </div>
+    </form>
+    <div class="hero-hint hero-hint_first" data-dropdown>
+      <div class="hero-hint__trigger" data-dropdown-trigger></div>
+      <div class="hero-hint__body" data-dropdown-body>
+        <span class="hero-hint__triangle"></span>
+        <h5 class="text-level-5 text-color-white">$35.00</h5>
+        <span class="text-small text-color-white">Cammile Fragnas</span>
+      </div>
+    </div>
+    <div class="hero-hint hero-hint_second" data-dropdown>
+      <div class="hero-hint__trigger" data-dropdown-trigger></div>
+      <div class="hero-hint__body" data-dropdown-body>
+        <span class="hero-hint__triangle"></span>
+        <h5 class="text-level-5 text-color-white">$65.00</h5>
+        <span class="text-small text-color-white">Dracena Fragnas</span>
+      </div>
+    </div>
+  </div>
+</section> <section class="section best indent-p-top-7">
+  <div class="container">
+    <div class="benefits__items flex flex-wrap justify-center">
+      <div class="benefits__item flex items-start">
+        <div class="benefits__icon indent-p-right-3">
+          <span class="icon-css icon-css_box"></span>
+        </div>
+        <div class="flex flex-column">
+          <h3 class="text-level-4 text-color-primary">Free Shapping</h3>
+          <span class="text-normal text-color-secondary-alternative indent-m-top-2 weight-500">No charge for each
+            delivery</span>
+        </div>
+      </div>
+
+      <div class="benefits__item flex items-start">
+        <div class="benefits__icon indent-p-right-3">
+          <span class="icon-css icon-css_payment"></span>
+        </div>
+        <div class="flex flex-column">
+          <h3 class="text-level-4 text-color-primary">Quick Payment</h3>
+          <span class="text-normal text-color-secondary-alternative indent-m-top-2 weight-500">100% secure
+            payment</span>
+        </div>
+      </div>
+
+      <div class="benefits__item flex items-start">
+        <div class="benefits__icon indent-p-right-3">
+          <span class="icon-css icon-css_support"></span>
+        </div>
+        <div class="flex flex-column">
+          <h3 class="text-level-4 text-color-primary">24/7 Support</h3>
+          <span class="text-normal text-color-secondary-alternative indent-m-top-2 weight-500">Quick support</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        <section class="section best indent-p-top-7">
+  <div class="container">
+    <div class="best__inner flex items-center">
+      <div class="best__meta flex flex-column shrink-0">
+        <h2 class="text-level-2 text-color-primary">Best Seller Product</h2>
+        <button class="button button_transparent indent-m-top-2">
+          <span class="text-big">See all colection</span>
+          <span class="icon icon_biggest">
+            <svg>
+              <use xlink:href="./assets/images/icons.svg#arrow-right"></use>
+            </svg>
+          </span>
+        </button>
+      </div>
+      <div class="best__cards flex items-end shrink-1 grow-1">
+        <div class="best-card">
+          <div class="best-card__image">
+            <picture>
+              <source srcset="./assets/images/decor-1.avif" type="image/avif" />
+              <source srcset="./assets/images/decor-1.webp" type="image/webp" />
+              <img class="img img_vertical" src="./assets/images/decor-1.png" alt="Cammile decor" />
+            </picture>
+          </div>
+          <div class="best-card__inner">
+            <div class="grow-1">
+              <div class="best-card__title text-level-4 text-color-primary">
+                Cammile
+              </div>
+              <div class="best-card__rating rating">
+                <span class="icon-css icon-css_mask icon-css_star rating__star"></span>
+                <span class="icon-css icon-css_mask icon-css_star rating__star"></span>
+                <span class="icon-css icon-css_mask icon-css_star rating__star"></span>
+                <span class="icon-css icon-css_mask icon-css_star rating__star"></span>
+                <span class="icon-css icon-css_mask icon-css_star rating__star"></span>
+              </div>
+            </div>
+
+            <div class="best-card__footer flex justify-between items-center">
+              <span class="text-level-4 text-color-primary">$65.00</span>
+              <button class="button button_primary button_icon">
+                <span class="icon">
+                  <svg>
+                    <use xlink:href="./assets/images/icons.svg#plus"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="best-card">
+          <div class="best-card__image">
+            <picture>
+              <source srcset="./assets/images/decor-2.avif" type="image/avif" />
+              <source srcset="./assets/images/decor-2.webp" type="image/webp" />
+              <img class="img img_vertical" src="./assets/images/decor-2.png" alt="Cammile decor" />
+            </picture>
+          </div>
+          <div class="best-card__inner">
+            <div class="grow-1">
+              <div class="best-card__title text-level-4 text-color-primary">
+                Cammile
+              </div>
+              <div class="best-card__rating rating">
+                <span class="icon-css icon-css_mask icon-css_star rating__star"></span>
+                <span class="icon-css icon-css_mask icon-css_star rating__star"></span>
+                <span class="icon-css icon-css_mask icon-css_star rating__star"></span>
+                <span class="icon-css icon-css_mask icon-css_star rating__star"></span>
+                <span class="icon-css icon-css_mask icon-css_star rating__star"></span>
+              </div>
+            </div>
+
+            <div class="best-card__footer flex justify-between items-center">
+              <span class="text-level-4 text-color-primary">$65.00</span>
+              <button class="button button_primary button_icon">
+                <span class="icon">
+                  <svg>
+                    <use xlink:href="./assets/images/icons.svg#plus"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="best-card">
+          <div class="best-card__image">
+            <picture>
+              <source srcset="./assets/images/decor-3.avif" type="image/avif" />
+              <source srcset="./assets/images/decor-3.webp" type="image/webp" />
+              <img class="img img_vertical" src="./assets/images/decor-3.png" alt="Cammile decor" />
+            </picture>
+          </div>
+          <div class="best-card__inner">
+            <div class="grow-1">
+              <div class="best-card__title text-level-4 text-color-primary">
+                Cammile
+              </div>
+              <div class="best-card__rating rating">
+                <span class="icon-css icon-css_mask icon-css_star rating__star"></span>
+                <span class="icon-css icon-css_mask icon-css_star rating__star"></span>
+                <span class="icon-css icon-css_mask icon-css_star rating__star"></span>
+                <span class="icon-css icon-css_mask icon-css_star rating__star"></span>
+                <span class="icon-css icon-css_mask icon-css_star rating__star"></span>
+              </div>
+            </div>
+
+            <div class="best-card__footer flex justify-between items-center">
+              <span class="text-level-4 text-color-primary">$65.00</span>
+              <button class="button button_primary button_icon">
+                <span class="icon">
+                  <svg>
+                    <use xlink:href="./assets/images/icons.svg#plus"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> <section class="section gallery indent-p-top-7">
+  <div class="container">
+    <div class="flex flex-column items-center">
+      <h2 class="text-level-2 text-color-primary text-center">
+        Interior Plant Reference
+      </h2>
+      <div class="text-normal text-color-secondary text-center indent-m-top-3">
+        make your home so comfortable with refreshing plants
+      </div>
+    </div>
+    <div class="gallery__inner indent-p-top-7">
+      <div class="gallery__col">
+        <div class="gallery__item">
+          <div class="image image_cover">
+            <picture>
+              <source srcset="./assets/images/interriors/thumb-1.avif" type="image/avif" />
+              <source srcset="./assets/images/interriors/thumb-1.webp" type="image/webp" />
+              <img
+                loading="lazy"
+                src="./assets/images/interriors/thumb-1.jpg"
+                alt="Gallery item 1"
+                data-viewer
+                data-original="./assets/images/interriors/image-1.jpg"
+              />
+            </picture>
+            <div class="image__caption">
+              <span>Living room</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery__item">
+          <div class="image image_cover">
+            <picture>
+              <source srcset="./assets/images/interriors/thumb-2.avif" type="image/avif" />
+              <source srcset="./assets/images/interriors/thumb-2.webp" type="image/webp" />
+              <img
+                loading="lazy"
+                src="./assets/images/interriors/thumb-2.jpg"
+                alt="Gallery item 2"
+                data-viewer
+                data-original="./assets/images/interriors/image-2.jpg"
+              />
+            </picture>
+            <div class="image__caption">
+              <span>Living room</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gallery__col">
+        <div class="gallery__item">
+          <div class="image image_cover">
+            <picture>
+              <source srcset="./assets/images/interriors/thumb-3.avif" type="image/avif" />
+              <source srcset="./assets/images/interriors/thumb-3.webp" type="image/webp" />
+              <img
+                loading="lazy"
+                src="./assets/images/interriors/thumb-3.jpg"
+                alt="Gallery item 3"
+                data-viewer
+                data-original="./assets/images/interriors/image-3.jpg"
+              />
+            </picture>
+            <div class="image__caption">
+              <span>Living room</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="section plants indent-p-y-10">
+  <div class="container">
+    <div class="plants__inner flex justify-between items-center">
+      <div class="plants__text">
+        <div class="flex flex-column">
+          <h2 class="text-level-2 text-color-primary">
+            How to care for&nbsp;plants
+          </h2>
+          <div class="text-normal text-color-secondary indent-m-top-3">
+            Take care of plants with all your heart
+          </div>
+        </div>
+
+        <div class="flex flex-column indent-m-top-7">
+          <div class="plants__item flex items-start">
+            <div class="plants__icon indent-p-right-3">
+              <span class="icon-css icon-css_light"></span>
+            </div>
+            <div class="flex flex-column">
+              <h3 class="text-level-4 text-color-primary">Adjust Lighting</h3>
+              <span class="text-normal text-color-secondary indent-m-top-1">When caring for indoor plants, make sure the
+                room temperature
+                is neither too cold nor too hot</span>
+            </div>
+          </div>
+
+          <div class="plants__item flex items-start indent-m-top-3">
+            <div class="plants__icon indent-p-right-3">
+              <span class="icon-css icon-css_water"></span>
+            </div>
+            <div class="flex flex-column">
+              <h3 class="text-level-4 text-color-primary">
+                Don't water too often
+              </h3>
+              <span class="text-normal text-color-secondary indent-m-top-1">Watering ornamental plants indoors does not
+                have to be done
+                every day.</span>
+            </div>
+          </div>
+
+          <div class="plants__item flex items-start indent-m-top-3">
+            <div class="plants__icon indent-p-right-3">
+              <span class="icon-css icon-css_plant"></span>
+            </div>
+            <div class="flex flex-column">
+              <h3 class="text-level-4 text-color-primary">
+                Don't water too often
+              </h3>
+              <span class="text-normal text-color-secondary indent-m-top-1">Watering ornamental plants indoors does not
+                have to be done
+                every day.</span>
+            </div>
+          </div>
+
+          <div class="plants__item flex items-start indent-m-top-3">
+            <div class="plants__icon indent-p-right-3">
+              <span class="icon-css icon-css_temperature"></span>
+            </div>
+            <div class="flex flex-column">
+              <h3 class="text-level-4 text-color-primary">
+                Fertilize regularly
+              </h3>
+              <span class="text-normal text-color-secondary indent-m-top-1">The nutrients most indoor houseplants need
+                are nitrogen for
+                balance and potassium for stem strength</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="plants__image">
+        <div class="image">
+          <picture>
+            <source srcset="./assets/images/plants.avif" type="image/avif" />
+            <source srcset="./assets/images/plants.webp" type="image/webp" />
+            <img loading="lazy" src="./assets/images/plants.jpg" alt="Plants" data-viewer data-original="./assets/images/plants.jpg" />
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      </main>
+      <footer class="footer indent-p-y-9">
+  <div class="container">
+    <div class="footer__inner flex justify-between items-start">
+      <form class="footer__newslatter">
+        <h3 class="text-level-3 text-color-white">Newslatter</h3>
+        <div class="field-box indent-m-top-3">
+          <div class="field">
+            <input type="email" class="field__input" name="email" placeholder="Enter your email" value="" />
+            <button class="button button_primary">
+              <span class="text-normal">Subscribe</span>
+            </button>
+          </div>
+          <div class="field-box__error"></div>
+        </div>
+      </form>
+      <div class="footer__items">
+        <div class="footer__item shrink-0">
+          <div class="links-list">
+            <h5 class="links-list__title text-level-5 text-color-white weight-700">
+              Support
+            </h5>
+            <ul class="links-list__items indent-m-top-4">
+              <li class="links-list__item text-small weight-500">
+                <a href="#" class="text-color-white">About Us</a>
+              </li>
+              <li class="links-list__item text-small weight-500">
+                <a href="#" class="text-color-white">Careers</a>
+              </li>
+              <li class="links-list__item text-small weight-500">
+                <a href="#" class="text-color-white">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__item shrink-0">
+          <div class="links-list">
+            <h5 class="links-list__title text-level-5 text-color-white weight-700">
+              Useful Link
+            </h5>
+            <ul class="links-list__items indent-m-top-4">
+              <li class="links-list__item text-small weight-500">
+                <a href="#" class="text-color-white">Payment & Tax</a>
+              </li>
+              <li class="links-list__item text-small weight-500">
+                <a href="#" class="text-color-white">Team of service</a>
+              </li>
+              <li class="links-list__item text-small weight-500">
+                <a href="#" class="text-color-white">Privaci Policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__item shrink-0">
+          <div class="links-list">
+            <h5 class="links-list__title text-level-5 text-color-white weight-700">
+              Our Menu
+            </h5>
+            <ul class="links-list__items indent-m-top-4">
+              <li class="links-list__item text-small weight-500">
+                <a href="#" class="text-color-white">Best Product</a>
+              </li>
+              <li class="links-list__item text-small weight-500">
+                <a href="#" class="text-color-white">Category</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__item">
+          <div class="links-list">
+            <h5 class="links-list__title text-level-5 text-color-white weight-700">
+              Address
+            </h5>
+            <ul class="links-list__items indent-m-top-4">
+              <li class="links-list__item text-small weight-500">
+                <a href="#" class="text-color-white">JL. Setiabudhi No. 193 Sukasari, Bandung West Java,
+                  Indonesia</a>
+              </li>
+              <li class="links-list__item text-small weight-500">
+                <a href="#" class="text-color-white">hallo@daunku.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="indent-m-y-6" />
+    <div class="flex justify-center">
+      <span class="copyright text-big text-color-white">© 2023 Daunku - All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script defer src="./assets/js/bundle.min.js?_v=20230527131319"></script>
+
+  </body>
+</html>
